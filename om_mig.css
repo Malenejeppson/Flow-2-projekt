@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.body{
+    display: flex;
+}
+/*MENU KNAPPERNE*/
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-color: white;
+}
+.forside-knap{
+    text-decoration: none;
+    color: black;
+}
+.om-mig-knap{
+    text-decoration: underline;
+    color: black;
+}
+.vaerker-kanp{
+    text-decoration: none;
+    color: black;
+}
+.kontakt-knap{
+    text-decoration: none;
+    color: black;
+}
+/*UNDERLINEHOVER*/
+.forside-knap:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.vaerker-kanp:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.kontakt-knap:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.menubar nav{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+.om-mig{
+    text-decoration: underline;
+    color: black;
+}
+
+/*BAGGRUNDSBILLEDE*/
+#baggrund{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+.forside{
+    background-image: url("om-mig-baggrundbillede-ps.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/*LOGO-BILLEDE*/
+.logo img{
+    width: 110px; 
+    padding-left: 2px;
+    /*margin-top: -25px;*/
+}
+.big-container h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 80px;
+}
+.big-container p{
+    display: flex;
+    justify-content: center;
+    color: white; 
+    line-height: 1.5;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    text-align: justify;
+}
+.big-container h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 50px;
+    margin-top: 40px;
+}
+.billede-links{
+    display: flex;
+    justify-content: center;
+}
+.billede-links img{
+    width: 300px;
+}
+.info-box{
+    position: relative;
+    display: flex;
+    margin: 10px;
+}
+.info-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    background: rgba(00, 00, 00, 0.5);
+    color: white;
+    font-size: 1.2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}

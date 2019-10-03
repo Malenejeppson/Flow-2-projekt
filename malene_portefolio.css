@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.body{
+    display: flex;
+}
+/*MENU KNAPPERNE*/
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-color: white;
+}
+.kontakt-knap{
+    text-decoration: none;
+    color: black;
+}
+.forside-knap{
+    text-decoration: underline;
+    color: black;
+}
+.vaerker-kanp{
+    text-decoration: none;
+    color: black;
+}
+.om-mig-knap{
+    text-decoration: none;
+    color: black;
+}
+/*UNDERLINEHOVER*/
+.kontakt-knap:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.vaerker-kanp:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.om-mig-knap:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.menubar nav{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+/*BAGGRUNDSBILLEDE*/
+#baggrund{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+.forside{
+    background-image: url("pexels-photo-baggrund-ps1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/*LOGO-BILLEDE*/
+.logo img{
+    width: 110px; 
+    padding-left: 2px;
+    /*margin-top: -25px;*/
+}
+/*TASTETESTBILLEDER*/
+.big-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90vh;
+}
+.tastetest{
+    background-color: white;
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #333;
+    height: 230px;
+    width: 230px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    
+}
+.billede-links{
+    display: flex;
+    justify-content: center;
+}
+.billede-links img{
+    width: 300px;
+}
+.info-box{
+    position: relative;
+    display: flex;
+    margin: 10px;
+}
+.info-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    background: rgba(00, 00, 00, 0.5);
+    color: white;
+    font-size: 1.2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.info-box:hover .info-text{
+    visibility: visible;
+    opacity: 1;
+}

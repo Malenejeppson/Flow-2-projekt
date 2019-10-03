@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.body{
+    display: flex;
+}
+/*MENU KNAPPERNE*/
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-color: white;
+}
+.forside-knap{
+    text-decoration: none;
+    color: black;
+}
+.kontakt-knap{
+    text-decoration: underline;
+    color: black;
+}
+.vaerker-kanp{
+    text-decoration: none;
+    color: black;
+}
+.om-mig-knap{
+    text-decoration: none;
+    color: black;
+}
+/*UNDERLINEHOVER*/
+.forside-knap:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.vaerker-kanp:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.om-mig-knap:hover{
+    /*color: blue;*/
+    text-decoration: underline;
+}
+.menubar nav{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+.om-mig{
+    text-decoration: underline;
+    color: black;
+}
+
+/*BAGGRUNDSBILLEDE*/
+#baggrund{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+.forside{
+    background-image: url("kontakt-baggrundbillede-ps.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/*LOGO-BILLEDE*/
+.logo img{
+    width: 110px; 
+    padding-left: 2px;
+    /*margin-top: -25px;*/
+}
+.big-container h1{
+    display: flex;
+    justify-content: center;
+    color:#313131;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 80px;
+}
+.big-container{
+    margin-left: 60px;
+}
+.big-container p{
+    color: black; 
+    line-height: 1.5;
+    font-size: 40px;
+    margin-top: 40px;
+    text-align: justify;
+}
+.fornavn{
+    margin-bottom: 10px;
+}
+input{
+    width: 450px;
+    height: 40px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Malene potefolio</title>
+    <link href="kontakt.css" rel="stylesheet">
+
+</head>
+<body class="forside">
+<!--MENU KNAPERNE-->
+    <section class="menubar">
+        <div class="logo">
+           <img src="logo.jpg" alt="Logo">
+            <!--    <a href="#">Logo</a> --> 
+        </div>
+            <nav>
+                <a class="forside-knap" href="malene_portefolio.html">Forside</a>
+                <a class="om-mig-knap" href="om_mig.html">Om mig</a>
+                <a class="vaerker-kanp" href="vaerker.html" >Værker</a>
+                <a class="kontakt-knap" href="kontakt.html">Kontakt</a>
+            </nav>
+     </section>
+<!--BAGGRUNDSBILLEDET-->
+   <div class="big-container">
+      <h1> Kontakt </h1>
+         <form action="send-afsted.php">
+    <!-- når brugeren trykker på send, activeres action filen -den sender data afsted -->
+        <p>Fornavn</p>
+        <input class="fornavn" type="text" name="fornavn" placeholder="Skriv dit fornavn her" autocomplete="on">
+        <!-- formular med linje -->
+        <p>Efternavn</p>
+        <input type="text" name="Efternavn" required placeholder="Skriv dit efternavn her">
+        <p>Email</p>
+        <input type="email" name="email" placeholder="Skriv din email her">
+        <p> Besked </p>
+        <textarea name="Kommentar" cols="60" rows="10" placeholder="Skriv besked her" autofocus></textarea>
+            <br> <br>
+            <input type="submit" value="Send">
+    </form>
+   <div id="baggrund">
+    </div>
+    </div>
+</body>
+</html>
